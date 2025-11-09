@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jana's Blog - Demo</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header>
+    <h1>Simple Blog</h1>
+    <div class="auth">
+        <a href="/login.html">Login</a> | <a href="/register.html">Register</a> | <a href="#" id="logout" style="display:none">Logout</a>
+    </div>
+</header>
+
+<main>
+    <section id="create-section" style="display:none">
+        <h2>Create / Update Post</h2>
+        <input id="postId" type="hidden">
+        <input id="author" placeholder="Author"><br>
+        <textarea id="content" placeholder="Content"></textarea><br>
+        <button id="createBtn">Create</button>
+        <button id="updateBtn" style="display:none">Update</button>
+    </section>
+
+    <section>
+        <h2>All Posts</h2>
+        <input id="searchBox" placeholder="Search posts..." style="width:100%;padding:6px;margin-bottom:10px;">
+        <div id="posts"></div>
+    </section>
+</main>
+
+
+<script src="/scripts.js"></script>
+</body>
+</html>
